@@ -10,34 +10,38 @@ grey green #5f6358
 light grey #f8f9f7
 light blue #10d0e5
 */
-.pageContainer {
+/* General Styles */
+* {
+  border: 1px solid red;
+}
+html {
+  height: 100%;
+  position: relative;
+
+}
+
+.wrapper {
   min-width: 320px;
   max-width: 960px;
   margin: auto;
+  background-color: #f8f9f7;
 }
-header {
-  background-color: #10d0e5;
-}
-.logoContainer {
-  background-color: #b9f442;
-  float: left;
-  width: 200px;
+body {
+  font-family: 'Lora', serif;
+  background-color: green;
+  height: 100%;
+  position: relative;
 
 }
+
+/* Header Styles */
+
 .logoPic {
   width: 70px;
   margin: 10px;
   display: inline-block;
   vertical-align: middle;
-
-
-
 }
-body {
-  font-family: 'Lora', serif;
-
-}
-
 h1 {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-size: 24px;
@@ -46,10 +50,65 @@ h1 {
   margin: 0px 0px 0px -10px;
   vertical-align: middle;
   position: relative;
-
-
 }
-
+button {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #red;
+  float: right;
+  width: 60px;
+  height: 25px;
+}
+header {
+  position: relative;
+  height: 63
+}
+nav {
+  float: right;
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+}
+ul {
+  margin: 0px;
+}
+li {
+  display: inline;
+}
 h3 {
   font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+aside {
+  float:left;
+  height: 100%;
+  width: 193px;
+  background-color: blue;
+  bottom: 0px;
+  top: 63px;
+}
+.productWrapper {
+  max-width: 253px;
+  max-height: 300px;
+  float: left;
+  background-color: #f8f9f7
+}
+.productWrapper:last-child {
+  float: right;
+}
+.productImage {
+  margin: 5px;
+  display: block;
+}
+.selecter {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #red;
+  width: 60px;
+  height: 25px;
+  margin: auto;
+  float: none;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px
 }
