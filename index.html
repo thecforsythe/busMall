@@ -4,6 +4,8 @@
     <title>BusMall</title>
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Lora|Oleo+Script+Swash+Caps" rel="stylesheet">
+
+
   </head>
   <body>
     <div class="wrapper">
@@ -22,7 +24,7 @@
       </header>
         <aside>
           <h3>Results</h3>
-        </aside>
+          </aside>
         <div class="productContainer">
           <div class="productWrapper" >
             <img class="productImage" src="pictures/backwardsWateringCan.jpg"/>
@@ -38,14 +40,20 @@
           </div>
           <button class="vote" type="button">Vote</button>
         </div>
-        <div class="productContainer">
+        <div class="instructionContainer">
           <h3>Welcome to the BusMall App</h3>
           <p> BusMall provides the newest and most innovative products on earth!
               Please help us choose the products we will feature in our upcoming cotalog. Each time set of images are displayed, pick the one you would like most to purchase. After 25 selections you can see the results in the side bar.</p>
+          <h3 id="title">Clicks per Item</h3>
+
+        <canvas id="barGraph" width="600" height="200"></canvas>
         </div>
+
       <footer>
         <small>&copy; Copyright 2017, BusMall Corp.</small>
       </footer>
     </div>
+    <script src="Chart.min.js" ></script>
+    <script src="script.js" ></script>
   </body>
 </html>
