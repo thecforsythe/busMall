@@ -1,0 +1,128 @@
+/*
+FONTS
+font-family: 'Lora', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Oleo Script Swash Caps', cursive;
+
+COLORS
+lime green #b9f442
+grey green #5f6358
+light grey #f8f9f7
+light blue #10d0e5
+*/
+/* General Styles */
+
+.wrapper {
+  min-width: 320px;
+  max-width: 960px;
+  margin: auto;
+  background-color: #f8f9f7;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: green;
+}
+
+/* Header Styles */
+
+.logoPic {
+  width: 70px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+h1 {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 24px;
+  color: #5f6358;
+  display: inline-block;
+  margin: 0px 0px 0px -10px;
+  vertical-align: middle;
+  position: relative;
+}
+button {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #red;
+  float: right;
+  width: 60px;
+  height: 25px;
+}
+header {
+  position: relative;
+  height: 63
+}
+nav {
+  float: right;
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+}
+ul {
+  margin: 0px;
+}
+li {
+  display: inline;
+}
+h3 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+aside {
+  float:left;
+  height: 100%;
+  width: 193px;
+  background-color: blue;
+  bottom: 0px;
+  min-height: 496px;
+
+}
+.productContainer {
+  max-width: 767px;
+  float:right;
+
+}
+.productWrapper {
+  max-width: 253px;
+  max-height: 300px;
+  float: left;
+  background-color: #f8f9f7;
+}
+.productWrapper:last-child {
+  float: right;
+}
+.productImage {
+  margin: 5px;
+  display: block;
+}
+.selecter {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #red;
+  width: 60px;
+  height: 25px;
+  margin: auto;
+  float: none;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px
+}
+.vote {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #red;
+  width: 600px;
+  height: 25px;
+  float: none;
+  display: block;
+  margin: 10px auto 10px auto;
+  margin-top: 20px;
+  position: relative;
+}
+p {
+  padding: 0px 20px 0px 20px;
+}
+footer {
+  text-align: center;
+  margin-bottom: 10px
+}
