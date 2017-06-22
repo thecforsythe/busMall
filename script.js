@@ -1,3 +1,27 @@
+var counters = {};
+var b1 = document.getElementById('button1');
+b1.addEventListener('click', function(event) {
+  count++;
+  console.log(count);
+});
+
+function Item(name){
+  this.name = name;
+}
+var allItems = [
+  new Item('Watering Can'),
+  new Item('Ice Cream Lock'),
+  new Item('Pizza Pouch'),
+  new Item('Pizza Scissors'),
+  new Item('Round Chair'),
+  new Item('Shoebrella'),
+  new Item('Toeless Boots'),
+  new Item('Toilet Paper Hat'),
+  new Item('Wine Glass')
+];
+
+
+
 var ctx = document.getElementById('barGraph').getContext('2d');
 var barGraph = new Chart(ctx, {
   type: 'bar',
