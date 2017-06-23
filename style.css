@@ -7,7 +7,7 @@ font-family: 'Oleo Script Swash Caps', cursive;
 COLORS
 lime green #b9f442
 grey green #5f6358
-light grey #f8f9f7
+light grey #f8f9f7 (248, 249, 247)
 light blue #10d0e5
 */
 /* General Styles */
@@ -101,9 +101,49 @@ aside {
   max-height: 300px;
   display: inline-block;
 }
-
 .productImage {
+
 }
+.productImage:focus {
+  transition: .75s;
+}
+#left:focus{
+  transition: .75s;
+  transform: scale(0)
+}
+#mid{
+  width:243px;
+  height:243px;
+  background-image: url("pictures/iceCreamLock.jpg");
+  outline-width: 0;
+}
+/* background url idea from here https://codemyviews.com/blog/inner-shadows-in-css-images-text-and-beyond*/
+#mid:focus{
+  opacity: .1;
+  transition: .75s;
+  box-shadow: inset 0px 0px 60px 122px rgba(248, 249, 247, .5);
+}
+#right {
+  outline-width: 0;
+}
+#right:focus {
+  animation: boom 1s ease;
+  animation-iteration-count: 1;
+  visibility: visible;
+
+}
+
+@keyframes boom{
+  99.9% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+opacity: 0; }
+
+}
+
+
 .selecter {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
