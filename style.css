@@ -7,20 +7,27 @@ font-family: 'Oleo Script Swash Caps', cursive;
 COLORS
 lime green #b9f442
 grey green #5f6358
-light grey #f8f9f7
+light grey #f8f9f7 (248, 249, 247)
 light blue #10d0e5
 */
 /* General Styles */
+html {
+  height: 100%;
+}
 
 .wrapper {
   min-width: 320px;
   max-width: 960px;
   margin: auto;
   background-color: #f8f9f7;
+  border: 1px solid red;
+
 }
 body {
   font-family: 'Lato', sans-serif;
-  background-color: green;
+  background-color: #10d0e5;
+  margin: 0px;
+  height: 100%;
 }
 
 /* Header Styles */
@@ -43,14 +50,14 @@ h1 {
 button {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #red;
+  background-color: lightgray;
   float: right;
   width: 60px;
   height: 25px;
 }
 header {
   position: relative;
-  height: 63
+  border-bottom: 4px solid #b9f442;
 }
 nav {
   float: right;
@@ -71,30 +78,72 @@ h3 {
 aside {
   float:left;
   height: 100%;
-  width: 193px;
-  background-color: blue;
+  width: 20%;
+  background-color: #f8f9f7;
   bottom: 0px;
-  min-height: 496px;
+  min-height: 900px;
+  padding: 10px;
+  border-right: 1px solid #b9f442;
+  box-sizing: border-box;
+
 
 }
 .productContainer {
-  max-width: 767px;
+  max-width: 80%;
   float:right;
+  padding-top: 50px;
+  text-align: center;
+  margin: 0px 15px;
 
 }
 .productWrapper {
-  max-width: 253px;
+  max-width: 35%;
   max-height: 300px;
-  float: left;
-  background-color: #f8f9f7;
-}
-.productWrapper:last-child {
-  float: right;
+  display: inline-block;
 }
 .productImage {
-  margin: 5px;
-  display: block;
+
 }
+.productImage:focus {
+  transition: .75s;
+}
+#left:focus{
+  transition: .75s;
+  transform: scale(0)
+}
+#mid{
+  width:243px;
+  height:243px;
+  background-image: url("pictures/iceCreamLock.jpg");
+  outline-width: 0;
+}
+/* background url idea from here https://codemyviews.com/blog/inner-shadows-in-css-images-text-and-beyond*/
+#mid:focus{
+  opacity: .1;
+  transition: .75s;
+  box-shadow: inset 0px 0px 60px 122px rgba(248, 249, 247, .5);
+}
+#right {
+  outline-width: 0;
+}
+#right:focus {
+  animation: boom 1s ease;
+  animation-iteration-count: 1;
+  visibility: visible;
+
+}
+
+@keyframes boom{
+  99.9% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+opacity: 0; }
+
+}
+
+
 .selecter {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -105,7 +154,8 @@ aside {
   float: none;
   text-align: center;
   display: block;
-  margin-bottom: 10px
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .vote {
   border-top-left-radius: 0px;
@@ -121,8 +171,30 @@ aside {
 }
 p {
   padding: 0px 20px 0px 20px;
+  display: block;
+}
+canvas {
+  text-align: center;
+  clear: both;
+  max-height: 300px;
+  padding-top: 0px;
+  padding-right: 20px;
+  max-width: 95%;
 }
 footer {
   text-align: center;
-  margin-bottom: 10px
+  padding-bottom: 10px;
+  background-color: #f8f9f7;
+  border: 1px solid none;
+  clear: both;
+  padding-top: 40px;
+}
+.instructionContainer {
+  max-width: 80%;
+  float:right;
+  min-height: 400px;
+  background-color: #f8f9f7;
+}
+#title {
+  padding-top: 30px;
 }
